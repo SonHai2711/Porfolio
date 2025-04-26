@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hà Ngu</title>
+    <title>My poforlio</title>
     <link rel="icon" href="https://png.pngtree.com/png-vector/20220814/ourmid/pngtree-letter-h-logo-png-png-image_6109421.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 
 <body>
+    <div id="particles-js"></div>
     <!--ctrl + shift + P -> Wrap with... -->
     <div class="container">
         <header>
@@ -25,10 +29,16 @@
                     <li><a href="Blog">Blog</a></li>
                 </ul>
             </nav>
+            <!---Window + .-->
             <div>
                 <button class="button">Contact
                     <i class="fa-regular fa-handshake"></i>
                 </button>
+                
+                <!--Only show when the screen is 900px-->
+                <div class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </header>
         <main>
@@ -41,12 +51,23 @@
                     <button class="btn-read"><i class="fa-solid fa-book"></i> Head more</button>
                 </div>
             </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>Design Tools</h3>
+                    <p>Learn pouplar design tools</p>
+                </div>
+                
+            </div>
             <div class="box-img">
                 <img src="./image/me-removebg-preview.png" alt="">
             </div>
         </main>
     </div>
-  
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
