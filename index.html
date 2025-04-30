@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My poforlio</title>
-    <link rel="icon" href="https://png.pngtree.com/png-vector/20220814/ourmid/pngtree-letter-h-logo-png-png-image_6109421.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -21,12 +17,36 @@
             <div class="logo">
                 SonHai
             </div>
-            <nav>
+            <nav id="mobile-nav">
                 <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="About">About</a></li>
-                    <li><a href="Project">Project</a></li>
-                    <li><a href="Blog">Blog</a></li>
+                    <li>
+                        <a href="Home">
+                            <span>
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="About">
+                            <span>
+                                About
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Project">
+                            <span>
+                                Project
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Blog">
+                            <span>
+                                Blog
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!---Window + .-->
@@ -36,8 +56,9 @@
                 </button>
                 
                 <!--Only show when the screen is 900px-->
-                <div class="bar">
-                    <i class="fa-solid fa-bars"></i>
+                <div id="menu-toggle" class="bar">
+                    <i id="bars-icon" class="fa-solid fa-bars"></i>
+                    <i style="display: none;" id="close-icon" class="fa-solid fa-xmark"></i>
                 </div>
             </div>
         </header>
@@ -50,24 +71,47 @@
                     <button class="btn-start button"><i class="fa-solid fa-rocket"></i> Let's start</button>
                     <button class="btn-read"><i class="fa-solid fa-book"></i> Head more</button>
                 </div>
-            </div>
-            <div class="features">
-                <div class="feature">
-                    <i class="fa-solid fa-palette"></i>
-                    <h3>Design Tools</h3>
-                    <p>Learn pouplar design tools</p>
+
+                <div class="features">
+                    <div class="feature animate__animated animate__fadeInUp aos-init aos-animate" data-aos="fade-up">
+                        <i class="fas fa-palette feature-icon"></i>
+                        <h3>Design Tools</h3>
+                        <p>Learn popular design tools</p>
+                    </div>
+                    <div class="feature animate__animated animate__fadeInUp aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-code feature-icon"></i>
+                        <h3>Coding</h3>
+                        <p>Basics of HTML &amp; CSS</p>
+                    </div>
+                    <div class="feature animate__animated animate__fadeInUp aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h3>Community</h3>
+                        <p>Join our design community</p>
+                    </div>
                 </div>
-                
             </div>
+            
             <div class="box-img">
-                <img src="./image/me-removebg-preview.png" alt="">
+                <div class="hover-effect-container">
+                    <img src="./image/me-removebg-preview.png" alt="">
+                </div>
             </div>
         </main>
-    </div>
 
+        <footer class="animate__animated animate__fadeInUp">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>© 2025 UI Beginner's. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./app.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
